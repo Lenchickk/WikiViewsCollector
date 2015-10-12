@@ -7,7 +7,7 @@
     <ProjectGuid>{56FC1B9D-DBA5-4409-A587-64678588A950}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>wikiParserRealDigger</RootNamespace>
+    <RootNamespace>vpUltimate</RootNamespace>
     <AssemblyName>wikiParserRealDigger</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\entryGeneratorWiki\entryGeneratorWiki\bin\Debug\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,8 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArticleDate.cs" />
+    <Compile Include="BunchHelper.cs" />
+    <Compile Include="Downloader.cs" />
+    <Compile Include="Exporter.cs" />
+    <Compile Include="LinkFinder.cs" />
+    <Compile Include="Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="unWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
